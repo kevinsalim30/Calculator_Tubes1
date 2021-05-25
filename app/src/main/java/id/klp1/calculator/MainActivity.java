@@ -2,8 +2,10 @@ package id.klp1.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -11,6 +13,9 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView prevCalcu;
     private EditText curDisplay;
+    private Button buttonsatuan;
+    private  Button buttoncurrency;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +24,31 @@ public class MainActivity extends AppCompatActivity {
 
         prevCalcu = findViewById(R.id.previousCal);
         curDisplay = findViewById(R.id.curEditText);
+
+        buttonsatuan = findViewById(R.id.buttonSatuan);
+       buttonsatuan.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+
+           }
+       });
+        buttoncurrency = findViewById(R.id.buttonCurr);
+        buttoncurrency.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCurr();
+            }
+        });
+
+    }
+
+    public void openCurr(){
+        Intent intent = new Intent(this, MainActivity2.class);
+        startActivity(intent);
+    }
+
+    public void openSatuan(){
+
     }
 
     private void updateText(String strToAdd){

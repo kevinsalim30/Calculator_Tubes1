@@ -21,4 +21,23 @@
     <string name="bagiText">÷</string>
     <string name="equalText">=</string>
     <string name="titikText">.</string>
+
+    <string name="title">Title</string>
+    <string name="genre">Genre</string>
+    <string name="textview">TextView</string>
+
+    <string-array name="Currency">
+        <item>USD to IDR</item>
+        <item>IDR to USD</item>
+        <item>EUR to IDR</item>
+        <item>IDR to EUR</item>
+        <item>GBP to IDR</item>
+        <item>IDR to GBP</item>
+        <item>JPY to IDR</item>
+        <item>IDR to JPY</item>
+        <item>SGD to IDR</item>
+        <item>IDR to SGD</item>
+    </string-array>
+
+
 </resources>
