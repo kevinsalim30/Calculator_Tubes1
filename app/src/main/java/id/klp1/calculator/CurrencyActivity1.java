@@ -27,7 +27,7 @@ public class CurrencyActivity1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_Currency1);
+        setContentView(R.layout.activity_currency1);
 
         currencyConverted = (EditText) findViewById(R.id.currency_converted);
         currencyToBeConverted = (EditText) findViewById(R.id.currency_to_be_converted);
